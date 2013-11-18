@@ -134,4 +134,5 @@ fi
 
 echo "Start PredictionIO ..."
 su -c "yes | $PIO_DIR/bin/start-all.sh" $USER
+sudo -u $USER $HADOOP_DIR/bin/hadoop dfsadmin -safemode leave
 echo "Done."
